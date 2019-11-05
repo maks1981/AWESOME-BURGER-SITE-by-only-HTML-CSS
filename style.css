@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, sans-serif;
+    font-size: 1em;
+    line-height: 1.8em;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Navbar style */
+
+#scrollnavbar {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: block;
+    box-shadow: 3px 1px 3px 1px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 6vh;
+    background-color: rgb(224, 178, 24);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 65%;
+    font-weight: bold;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.nav a:hover {
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+/* Style Main Logo */
+
+span {
+    color: red;
+}
+
+div h2{
+    cursor: pointer;
+}
+
+/* Style main photo */
+
+div.image {
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 95vh;
+    content: url(https://d9hyo6bif16lx.cloudfront.net/live/img/production/detail/menu/lunch-dinner_burgers_all-american-burger.jpg);
+}
+
+/* This Months Specials Style */
+
+.page-header {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom: #333 solid 1px;
+    text-align: center;
+    background-color: rgba(231, 156, 17, 0.568);
+    box-shadow: 1px 1px 1px 1px;
+}
+
+/* Style Tree container */
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    height: 95vh;
+    color: black;
+}
+
+.container h2 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.container ul {
+    margin: 2% 2% 2% 2%;
+    color: black;
+}
+
+.container ul img {
+    display: flex;
+    width: 100%;
+    height: auto;
+    content: url(https://www.bk.com/sites/default/files/03156-2-Cheeseburger-700x360_CR.jpg);
+}
+
+.container a{
+    color: black;
+    text-decoration: none;
+}
+
+.container a:hover {
+    color: red;
+}
+
+ul h2{
+    display: flex;
+    justify-content: space-around;
+    margin: 25px;
+    text-align: center;
+}
+
+/* Style stars */
+
+.stars {
+    display: none;
+}
+
+@media only screen and ( max-width: 768px) {
+    .container ul {
+        position: absolute;
+        padding: 1% 10%;
+        background-repeat: no-repeat;
+        margin-bottom: 18%;
+        height: 2vh;
+    }
+    div.image {
+        margin: 20px 0px 0px 0px;
+        height: 50vh;
+    }
+    .stars {
+        display: inline-block;
+        text-align: center;
+        margin-left: 38%;
+        margin-bottom: 5%;
+    }
+    .checked {
+        color: orange;
+    }
+    .nav ul {
+        display: none;
+    }
+    #scrollnavbar {
+        display: inline-block;
+        z-index: 1;
+    }
+}
+
+/* Style Secret of MBurger */
+
+.ytname {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.3em;
+    padding: 10px;
+    border-bottom: #333 solid 1px;
+    text-align: center;
+    background-color: rgba(231, 156, 17, 0.568);
+}
+
+/* Style of Yotube iframe */
+
+.burger {
+    width: 100%;
+    height: 93vh;
+}
+
+/* Style Map */
+
+iframe.maps {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+}
+
+.mapcontact {
+    text-align: center;
+    margin: 10px;
+    background-color: rgba(231, 156, 17, 0.568);
+    border-radius: 10px;
+}
+.mapcontact a {
+    text-decoration: none;
+}
+
+/* Style Footer */
+
+footer {
+    padding-bottom: 10px;
+    text-align: center;
+    color: #000;
+}
